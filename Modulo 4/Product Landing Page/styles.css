@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    background-color: #EEEEEE;
+    color: black;
+}
+/*header*/
+header {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    place-items: center;
+    margin-bottom: 20px;
+    background-color: #EEEEEE;
+}
+header h3 {
+    font-size: 1.4rem;
+    padding-left: 10px;
+    margin-right: auto;
+    color: black
+}
+header img {
+    margin-left: 2rem;
+    width: 80px;
+}
+header nav {
+    right: 0;
+    top: 0;
+    margin-left: auto;
+    padding: 40px;
+}
+
+nav a {
+    font-size: 1.2rem;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+/*form*/
+form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 450px;
+    height: 100px;
+    background-color: #DDDDDD;
+    padding-top: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+form input {
+    margin: 5px;
+}
+
+/*gif*/
+.gif {
+    background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGRkajZpMm50Mm40cjE3YnMwbm5vMTRxdXFpenV1eWR6YWF1bGpubSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/drTBYOsa0o5vLm0OKG/giphy.gif);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin: 20px;
+}
+/*lista*/
+i {
+    color: rgb(181, 17, 17); /* Cor dos ícones */
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+ul {
+    place-items: center;
+}
+li {
+    margin: 50px;
+    list-style-type: none;
+}
+/*demostration*/
+#Demostration {
+    display: flex;
+    justify-content: center;
+}
+/*preco*/
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center; /* Centraliza os cartões */
+    gap: 20px; /* Espaçamento entre os cartões */
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 250px; /* Largura fixa para os cartões */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+.card p {
+    margin: 0 0 10px;
+    font-size: 1em;
+}
+.price {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #FFC107; /* Cor amarela */
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffca28; /* Efeito hover */
+}
+
+@media (max-height: 400) {
+    .gif {
+        height: 400;
+    }
+}

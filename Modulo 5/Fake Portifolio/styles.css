@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+@media (max-width: 100%) {
+    width: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:static;
+}
+/*welcome*/
+#welcome-section img{
+    height: auto;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#welcome-section h1{
+    z-index: -1;
+    color: #FFFFFF;
+}
+/*projetos*/
+#projects {
+    background-color: #AAAAAA;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.albums-section {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+    padding: 50px 20px;
+}
+.albums-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.album {
+    background-color: #2e3b4e; 
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center; 
+    width: 300px; 
+    padding: 20px; 
+    transition: transform 0.3s;
+}
+
+.album:hover {
+    transform: scale(1.05); 
+}
+
+.album img {
+    width: 100%;
+    height: auto; 
+    border-radius: 8px; 
+}
+.album h3 {
+    margin-top: 15px; 
+    font-size: 24px;
+}
+
+.album p {
+    margin-top: 10px;
+}
+
+.album p a {
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 18px; 
+}
+
+.album p a:hover {
+    text-decoration: underline;
+}
+
+.view-more {
+    background-color: #B22222; 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px;
+    font-size: 18px; 
+    cursor: pointer;
+    margin-top: 30px; 
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.view-more:hover {
+    background-color: #d61616;
+    transform: scale(1.05);
+}
+
+/*redessociais*/
+#Follow-More {
+    background-color: #0D0D0D;
+}
+.social-icons {
+    color: white;
+    display: grid;
+    font-size: 3rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    align-items: center;
+    z-index: 1;
+  }
+/*header*/
+header {
+    background-color: #0D0D0D;
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: right;
+    position: fixed;
+}
+header nav {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-right: 25px;
+}
+header a {
+    text-decoration: none;
+    color: #AAAAAA;
+    font-size: 1.4em;
+}
+
